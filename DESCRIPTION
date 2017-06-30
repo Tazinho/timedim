@@ -12,7 +12,6 @@ Depends:
 Imports:
     dplyr,
     lubridate,
-    tibble,
     purrr,
     tidyr
 Suggests:
