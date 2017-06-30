@@ -7,12 +7,12 @@
 #'
 #' @return a long data frame with a dates column
 #'
-#' @importFrom magrittr "%>%"
+#' @importFrom dplyr "%>%"
 #'
 #' @export
 
 time_gather <- function(.data, by){
-  .data %>% dplyr::mutate(dates = map2(d_min, d_max, ~ seq(.x, .y, by = by))) %>%
+  .data %>% dplyr::mutate(dates = purrr::map2(d_min, d_max, ~ seq(.x, .y, by = by))) %>%
     dplyr::select(-d_min, -d_max) %>% 
     tidyr::unnest
 }

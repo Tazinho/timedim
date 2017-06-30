@@ -13,7 +13,8 @@ Imports:
     dplyr,
     lubridate,
     purrr,
-    tidyr
+    tidyr,
+    magrittr
 Suggests:
     testthat,
     tibble,
