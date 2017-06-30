@@ -7,6 +7,8 @@
 #'
 #' @return a long data frame with a dates column
 #'
+#' @importFrom magrittr "%>%"
+#'
 #' @export
 
 time_gather <- function(.data, by){
