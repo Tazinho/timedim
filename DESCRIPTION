@@ -1,0 +1,25 @@
+Package: timedim
+Version: 0.1
+Date: 2017-06-01
+Title: tools for timedimensions
+Description: Tidy creation and wrangling of dense time dimensions.
+Authors@R: c(
+    person("Malte", "Grosser", , "malte.grosser@gmail.com", role = c("aut", "cre")))
+Author: Malte Grosser <malte.grosser@gmail.com>
+Maintainer: Malte Grosser <malte.grosser@gmail.com>
+Depends:
+    R (>= 3.4.0)
+Imports:
+    dplyr,
+    lubridate,
+    tibble,
+    purrr,
+    tidyr
+Suggests:
+    testthat,
+    tibble,
+    knitr,
+    rmarkdown
+License: GPL-3
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
