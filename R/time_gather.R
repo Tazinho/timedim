@@ -14,7 +14,7 @@
 time_gather <- function(.data, by){
   .data %>% dplyr::mutate(dates = purrr::map2(d_min, d_max, ~ seq(.x, .y, by = by))) %>%
     dplyr::select(-d_min, -d_max) %>% 
-    tidyr::unnest
+    tidyr::unnest()
 }
 
 # df_wide <- tibble(id = letters[1:3],
