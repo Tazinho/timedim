@@ -10,9 +10,9 @@
 #' @export
 
 time_gather <- function(.data, by){
-  .data %>% mutate(dates = map2(d_min, d_max, ~ seq(.x, .y, by = by))) %>%
-    select(-d_min, -d_max) %>% 
-    unnest
+  .data %>% dplyr::mutate(dates = map2(d_min, d_max, ~ seq(.x, .y, by = by))) %>%
+    dplyr::select(-d_min, -d_max) %>% 
+    tidyr::unnest
 }
 
 # df_wide <- tibble(id = letters[1:3],
